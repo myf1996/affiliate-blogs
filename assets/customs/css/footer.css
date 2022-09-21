@@ -1,0 +1,66 @@
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.footer-form {
+  margin-bottom: 30px;
+}
+
+.single-footer-caption .footer-tittle h4 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-bottom: 38px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.single-footer-caption .footer-form form {
+  position: relative;
+}
+
+.single-footer-caption .footer-form form input {
+  width: 100%;
+  height: 43px;
+  padding: 10px 20px;
+  border: 0;
+  color: #101720;
+  background: #fff;
+}
+
+.single-footer-caption .footer-form form button {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 14px 22px;
+  background: #0a0f17;
+  line-height: 1;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+
+.footer-follow-us-heading h3 {
+  color: #191d34;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.social li {
+  display: inline-block;
+  margin-right: 25px;
+}

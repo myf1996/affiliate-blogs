@@ -1,0 +1,333 @@
+a {
+  text-decoration: none;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.latest-news h3 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  color: #191d34;
+  color: #191d34;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.latest-news h6 {
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.latest-news a {
+  text-decoration: none;
+  color: #393845;
+}
+
+.latest-news li {
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+.latest-news a:hover {
+  color: #2a836e;
+  transition: color 0.15s ease-out 0.15s;
+}
+
+.artile-by {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(163, 163, 163);
+}
+
+.artile-time {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(7, 7, 7);
+}
+
+
+.section-padding30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.section-tittle span {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  color: #2a836e;
+  display: inline-block;
+  position: relative;
+  padding-left: 68px;
+}
+
+.section-tittle span::before {
+  position: absolute;
+  content: "";
+  width: 54px;
+  height: 2px;
+  background: #2a836e;
+  top: 0;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-tittle h2 {
+  font-size: 50px;
+  display: block;
+  color: #191d34;
+  font-weight: 900;
+}
+
+.home-blog-area .home-blog-single {
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-img img {
+  width: 100%;
+  -webkit-transform: scale 1;
+  -ms-transform: scale 1;
+  transform: scale 1;
+  transition: all 0.5s ease-out 0s;
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-img ul {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-img ul li {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #011548;
+  padding: 20px 30px 20px 84px;
+  background: #f7f7f7;
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-cap {
+  background: #fff;
+  padding: 30px 86px 36px 81px;
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a {
+  color: #191d34;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-cap p {
+  color: #737980;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-cap .more-btn {
+  color: #2a836e;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.home-blog-single:hover {
+  box-shadow: 0px 22px 57px 0px rgb(42 131 110 / 20%);
+}
+
+.home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a:hover {
+  color: #2a836e;
+  -webkit-transform: scale 1;
+  -ms-transform: scale 1;
+  transform: scale 1;
+  transition: all 0.5s ease-out 0s;
+}
+
+.more-btn:hover {
+  text-decoration: none;
+}
+
+.home-blog-area-2 {
+  padding: 30px;
+  border: 1px solid;
+}
+
+.home-blog-area-2 h3 {
+  color: #191d34;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.section-title span {
+  background-image: url("https://www.goodhousekeeping.com/_assets/design-tokens/goodhousekeeping/static/images/Clover.5c7a1a0.svg");
+  background-repeat: no-repeat;
+  bottom: -0.625rem;
+  content: '';
+  display: block;
+  height: 1.25rem;
+  line-height: 1;
+  margin: 0 auto 1.25rem;
+  position: relative;
+  width: 1.25rem;
+}
+
+.home-blog-single-area-2{
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-gap: 0.9375rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.3125rem;
+}
+
+.home-blog-single-area-2:hover{
+  text-decoration: none;
+  color: #2a836e;
+  transition: color 0.3s ease-in-out;
+}
+
+.home-blog-single-area-2 .home-blog-img {
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+.home-blog-single-area-2 .home-blog-img img{
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  height: var(--height, auto);
+  max-height: 100%;
+  object-fit: var(--object-fit, cover);
+  min-height: 200px;
+}
+
+.home-blog-content h3 {
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-align: left;
+}
+
+.home-blog-content h3:hover {
+  color: #2a836e;
+  -webkit-transform: scale 1;
+  -ms-transform: scale 1;
+  transform: scale 1;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+/*  */
+
+.home-blog-content p {
+  color: rgb(163, 163, 163);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.forth-section .image-cover img{
+  width: 100%;
+  height: 580px;
+}
+
+.forth-section .image-description {
+  background: #fff;
+  padding: 30px 86px 36px 81px;
+}
+
+.forth-section .image-description h3 a {
+  color: #191d34;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.forth-section .image-description h3 a:hover {
+  color: #2a836e;
+  -webkit-transform: scale 1;
+  -ms-transform: scale 1;
+  transform: scale 1;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.forth-section .home-blog-content h3 {
+  font-size: 0.8rem;
+  text-align: left;
+  color: #191d34;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+}
+.home-blog-content{
+  height: 100%;
+}
+
+.forth-section .image-description p {
+  color: #737980;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.forth-section .image-description .more-btn {
+  color: #2a836e;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}

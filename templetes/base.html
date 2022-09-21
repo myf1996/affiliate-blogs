@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog {% block title %} {% endblock%}</title>
+
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'customs/img/favicon.ico' %} ">
+
+	<!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'customs/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="{% static 'customs/css/font-awesome.min.css' %}"> -->
+	<!--<link rel="stylesheet" href="{% static 'customs/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'customs/css/slicknav.css' %}">
+	<link rel="stylesheet" href="{% static 'customs/css/flaticon.css' %}">
+	<link rel="stylesheet" href="{% static 'customs/css/animate.min.css' %}">
+	<link rel="stylesheet" href="{% static 'customs/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'customs/css/fontawesome-all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'customs/css/themify-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'customs/css/slick.css' %}">
+	<link rel="stylesheet" href="{% static 'customs/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'customs/css/style.css' %}"> -->
+
+</head>
+<body>
+    <div class="container-fluid">
+    {% include 'partials/header.html' %}
+
+    {% block content %}
+
+    {% endblock%}
+
+
+    {% include 'partials/footer.html' %}
+</div>
+    <!-- JS here -->
+
+    <!-- <script src="{% static 'customs/js/vendor/modernizr-3.5.0.min.js' %}"></script> -->
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'customs/js/jquery-3.2.1.slim.min.js' %}"></script>
+    <script src="{% static 'customs/js/popper.min.js' %}"></script>
+    <script src="{% static 'customs/js/bootstrap.min.js' %}"></script> 
+    <!-- Jquery Mobile Menu -->
+    <!-- <script src="{% static 'customs/js/jquery.slicknav.min.js' %}"></script> -->
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <!-- <script src="{% static 'customs/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'customs/js/slick.min.js' %}"></script> -->
+
+    <!-- One Page, Animated-HeadLin -->
+    <!-- <script src="{% static 'customs/js/wow.min.js' %}"></script>
+    <script src="{% static 'customs/js/animated.headline.js' %}"></script>
+    <script src="{% static 'customs/js/jquery.magnific-popup.js' %}"></script> -->
+
+    <!-- Nice-select, sticky-->
+    <!-- <script src="{% static 'customs/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'customs/js/jquery.sticky.js' %}"></script> -->
+
+    <!-- counter , waypoint -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="{% static 'customs/js/jquery.counterup.min.js' %}"></script> -->
+
+    <!-- contact js -->
+
+    <!-- Jquery Plugins, main Jquery -->
+    <!-- <script src="{% static 'customs/js/plugins.js' %}"></script>
+    <script src="{% static 'customs/js/main.js' %}"></script> -->
+
+</body>
+</html>

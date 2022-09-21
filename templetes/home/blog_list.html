@@ -1,0 +1,205 @@
+{% extends 'base.html' %} 
+{% block title %}
+{{slug}}
+{% endblock %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'customs/css/blog-list.css' %}" />
+<br/>
+<div>
+  <!--? Hero Start -->
+  <div class="container">
+    <div class="slider-area2" style="background-image: url('https://via.placeholder.com/1100x450')">
+      <div class="slider-height2 hero-overly2 d-flex align-items-center">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12">
+                      <div class="hero-cap hero-cap2 text-center">
+                          <h2>{{slug}}</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+<!-- Hero End -->
+
+
+<section class="blog_area section-padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-12">
+              <div class="blog_left_sidebar">
+                  <article class="blog_item">
+                      <div class="blog_item_img">
+                          <a href="#"><img class="card-img rounded-0" src="https://via.placeholder.com/700x500" alt="image_not_found"></a>
+                          <a href="#" class="blog_item_date">
+                              <p>May 17, 2020</p>
+                          </a>
+                      </div>
+
+                      <div class="blog_details">
+                          <a class="d-inline-block" href="{{ entry.get_absolute_url }}">
+                              <h2>Hello World</h2>
+                          </a>
+                          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                          <ul class="blog-info-link">
+                              <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>{% for i in entry.tags.all %}{{i}},{% endfor %}Hello, World, Test,</a></li>
+                              <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>Category Name</a></li>
+                              <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-user"></i>by Arthor Name</a></li>
+                          </ul>
+                      </div>
+                  </article>
+                  <article class="blog_item">
+                    <div class="blog_item_img">
+                        <a href="#"><img class="card-img rounded-0" src="https://via.placeholder.com/700x500" alt="image_not_found"></a>
+                        <a href="#" class="blog_item_date">
+                            <p>May 17, 2020</p>
+                        </a>
+                    </div>
+
+                    <div class="blog_details">
+                        <a class="d-inline-block" href="{{ entry.get_absolute_url }}">
+                            <h2>Hello World</h2>
+                        </a>
+                        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                        <ul class="blog-info-link">
+                            <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>{% for i in entry.tags.all %}{{i}},{% endfor %}Hello, World, Test,</a></li>
+                            <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>Category Name</a></li>
+                            <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-user"></i>by Arthor Name</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="blog_item">
+                  <div class="blog_item_img">
+                      <a href="#"><img class="card-img rounded-0" src="https://via.placeholder.com/700x500" alt="image_not_found"></a>
+                      <a href="#" class="blog_item_date">
+                          <p>May 17, 2020</p>
+                      </a>
+                  </div>
+
+                  <div class="blog_details">
+                      <a class="d-inline-block" href="{{ entry.get_absolute_url }}">
+                          <h2>Hello World</h2>
+                      </a>
+                      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                      <ul class="blog-info-link">
+                          <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>{% for i in entry.tags.all %}{{i}},{% endfor %}Hello, World, Test,</a></li>
+                          <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>Category Name</a></li>
+                          <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-user"></i>by Arthor Name</a></li>
+                      </ul>
+                  </div>
+              </article>
+              <article class="blog_item">
+                <div class="blog_item_img">
+                    <a href="#"><img class="card-img rounded-0" src="https://via.placeholder.com/700x500" alt="image_not_found"></a>
+                    <a href="#" class="blog_item_date">
+                        <p>May 17, 2020</p>
+                    </a>
+                </div>
+
+                <div class="blog_details">
+                    <a class="d-inline-block" href="{{ entry.get_absolute_url }}">
+                        <h2>Hello World</h2>
+                    </a>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                    <ul class="blog-info-link">
+                        <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>{% for i in entry.tags.all %}{{i}},{% endfor %}Hello, World, Test,</a></li>
+                        <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>Category Name</a></li>
+                        <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-user"></i>by Arthor Name</a></li>
+                    </ul>
+                </div>
+            </article>
+                  
+              </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="main-sidebar">
+              <!-- Single Widget -->
+              <div class="single-widget category">
+                <h3 class="title">Categories</h3>
+                <ul class="categor-list">
+                  <li><a href="#">Men's Apparel</a></li>
+                  <li><a href="#">Women's Apparel</a></li>
+                  <li><a href="#">Bags Collection</a></li>
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Sun Glasses</a></li>
+                </ul>
+              </div>
+              <!--/ End Single Widget -->
+              <!-- Single Widget -->
+              <div class="single-widget recent-post">
+                <h3 class="title">Recent post</h3>
+                <!-- Single Post -->
+                <div class="single-post">
+                  <div class="image">
+                    <img src="https://via.placeholder.com/100x100" alt="#">
+                  </div>
+                  <div class="content">
+                    <h5><a href="#">Top 10 Beautyful Women Dress in the world</a></h5>
+                    <ul class="comment">
+                      <li><i class="fa fa-calendar" aria-hidden="true"></i>Jan 11, 2020</li>
+                      <li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Post -->
+                <!-- Single Post -->
+                <div class="single-post">
+                  <div class="image">
+                    <img src="https://via.placeholder.com/100x100" alt="#">
+                  </div>
+                  <div class="content">
+                    <h5><a href="#">Top 10 Beautyful Women Dress in the world</a></h5>
+                    <ul class="comment">
+                      <li><i class="fa fa-calendar" aria-hidden="true"></i>Mar 05, 2019</li>
+                      <li><i class="fa fa-commenting-o" aria-hidden="true"></i>59</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Post -->
+                <!-- Single Post -->
+                <div class="single-post">
+                  <div class="image">
+                    <img src="https://via.placeholder.com/100x100" alt="#">
+                  </div>
+                  <div class="content">
+                    <h5><a href="#">Top 10 Beautyful Women Dress in the world</a></h5>
+                    <ul class="comment">
+                      <li><i class="fa fa-calendar" aria-hidden="true"></i>June 09, 2019</li>
+                      <li><i class="fa fa-commenting-o" aria-hidden="true"></i>44</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Post -->
+              </div>
+              <!--/ End Single Widget -->
+              <!-- Single Widget -->
+              <!--/ End Single Widget -->
+              <!-- Single Widget -->
+              <div class="single-widget side-tags">
+                <h3 class="title">Tags</h3>
+                <ul class="tag">
+                  <li><a href="#">business</a></li>
+                  <li><a href="#">wordpress</a></li>
+                  <li><a href="#">html</a></li>
+                  <li><a href="#">multipurpose</a></li>
+                  <li><a href="#">education</a></li>
+                  <li><a href="#">template</a></li>
+                  <li><a href="#">Ecommerce</a></li>
+                </ul>
+              </div>
+              <!--/ End Single Widget -->
+    
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--================Blog Area =================-->
+
+</div>
+<br/>
+{% endblock %}
