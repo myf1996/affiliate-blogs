@@ -24,7 +24,7 @@ def home(request):
     print("==>entry:",entries)
     print("==>recent:",recent[:1])
     print("==>blog",blog)
-    print("==>tag",tag)
+    print("==>tag",tags)
     
     context = {
         categories: categories
