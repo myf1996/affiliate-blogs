@@ -12,6 +12,7 @@ from django.conf import settings
 from markupfield.fields import MarkupField
 from model_utils.models import TimeStampedModel
 from taggit.managers import TaggableManager
+from ckeditor.fields import RichTextField
 
 class Categories(models.Model):
   name = models.CharField(unique = True,max_length = 255,null=False,blank=False)
@@ -50,7 +51,8 @@ class Entry(TimeStampedModel):
   title = models.CharField(max_length=255)
   category = models.ForeignKey(Categories,on_delete=models.CASCADE)
   slug = models.SlugField(max_length=255, unique=True, editable=False)
-  content = MarkupField(default_markup_type='html')
+  # content = MarkupField(default_markup_type='html')
+  content = RichTextField()
   is_published = models.BooleanField(default=False)
   published_timestamp = models.DateTimeField(blank=True, null=True, editable=False)
   author = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, editable=True, on_delete=models.CASCADE)

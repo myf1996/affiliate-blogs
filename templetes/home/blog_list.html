@@ -35,23 +35,23 @@
                 {% for entry in entries %}
                 <article class="blog_item">
                     <div class="blog_item_img">
-                        <a href="#"><img class="card-img rounded-0" src="https://via.placeholder.com/700x500" alt="image_not_found"></a>
-                        <a href="#" class="blog_item_date">
+                        <a href="/category/{{entry.category.slug}}/{{entry.slug}}"><img class="card-img rounded-0" src="https://via.placeholder.com/700x500" alt="image_not_found"></a>
+                        <a href="/category/{{entry.category.slug}}/{{entry.slug}}" class="blog_item_date">
                             <p>{{entry.published_timestamp | date:"DATE_FORMAT" }}</p>
                         </a>
                     </div>
 
                     <div class="blog_details">
-                        <a class="d-inline-block" href="{{ entry.get_absolute_url }}">
+                        <a class="d-inline-block" href="/category/{{entry.category.slug}}/{{entry.slug}}">
                             <h2>{{entry.title}}</h2>
                         </a>
-                        <p>{{entry.content |truncatewords_html:60 }}</p>
+                        <p>{{entry.content|safe|truncatewords_html:60 }}</p>
                         <ul class="blog-info-link">
                           {% if entry.tags.all|length > 0 %}
-                          <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>{% for i in entry.tags.all %}{{i}},{% endfor %}</a></li>
+                          <li><a href="/category/{{entry.category.slug}}/{{entry.slug}}"><i class="fa fa-tag"></i>{% for i in entry.tags.all %}{{i}},{% endfor %}</a></li>
                           {% endif %}
-                          <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-tag"></i>{{entry.category.name}}</i></a></li>
-                            <li><a href="{{ entry.get_absolute_url }}"><i class="fa fa-user"></i>by {{entry.author}}</a></li>
+                          <li><a href="/category/{{entry.category.slug}}/{{entry.slug}}"><i class="fa fa-tag"></i>{{entry.category.name}}</i></a></li>
+                            <li><a href="/category/{{entry.category.slug}}/{{entry.slug}}"><i class="fa fa-user"></i>by {{entry.author}}</a></li>
                         </ul>
                     </div>
                 </article>
