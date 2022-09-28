@@ -100,14 +100,9 @@
     <div class="container">
       <div class="horizontal-navbar">
         <ul>
-          <li><a href="#">Category 1</a></li> 
-          <li><a href="#">Category 2</a></li>
-          <li><a href="#">Category 3</a></li>
-          <li><a href="#">Category 4</a></li>
-          <li><a href="#">Category 5</a></li>
-          <li><a href="#">Category 6</a></li>
-          <li><a href="#">Category 7</a></li>
-          
+          {% for category in categories %}
+          <li><a href="/category/{{category.slug}}">{{category.name}}</a></li> 
+          {% endfor %}
         </ul>
       </div>
     </div>

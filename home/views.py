@@ -27,7 +27,10 @@ def home(request):
     print("==>tag",tags)
     
     context = {
-        categories: categories
+        'categories': categories,
+        'entries': entries,
+        'recents': recent[:4],
+        'tags': tags
     }
     return render(request,"home/index.html",context)
 
@@ -36,26 +39,49 @@ def home(request):
 #     }
 #     return render(request,"home/index.html",context)
 def tagList(request, slug):    
+    categories = Categories.objects.filter(isActive=True)
+    category = categories.get(isActive=True, slug=slug)
+    entries = Entry.objects.filter(is_published=True)
+    recents = entries.order_by('-published_timestamp')
+    tags = Tag.objects.all()
     context = {
-        'slug': slug
+        'categories': categories,
+        'category': category,
+        'entries': entries,
+        'recents': recents[:4],
+        'tags': tags
     }
-    print("-------tagList-------",context)
     return render(request,"home/blog_list.html",context)
 
 
-def categoryList(request, slug):    
+def categoryList(request, slug):
+    categories = Categories.objects.filter(isActive=True)
+    category = categories.get(isActive=True, slug=slug)
+    entries = Entry.objects.filter(is_published=True)
+    recents = entries.order_by('-published_timestamp')
+    tags = Tag.objects.all()
     context = {
-        'slug': slug
+        'categories': categories,
+        'category': category,
+        'entries': entries,
+        'recents': recents[:4],
+        'tags': tags
     }
-    print("-------categoryList-------",context)
     return render(request,"home/blog_list.html",context)
 
 
 def blogDetail(request, cat_slug, blog_slug):    
+    categories = Categories.objects.filter(isActive=True)
+    category = categories.get(isActive=True, slug=cat_slug)
+    entries = Entry.objects.filter(is_published=True, category=category)
+    entry = Entry.objects.get(is_published=True, slug=blog_slug)
+    recents = entries.order_by('-published_timestamp')
+    tags = Tag.objects.all()
     context = {
-        'cat_slug': cat_slug,
-        'blog_slug': blog_slug,
+        'categories': categories,
+        'entries': entries,
+        'entry': entry,
+        'recents': recents[:4],
+        'tags': tags
     }
-    print("--------------")
-    print("--------------",context)
     return render(request, "home/blog_detail.html",context)
